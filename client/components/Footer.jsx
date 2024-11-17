@@ -11,7 +11,7 @@ function Footer() {
         <p className="text-gray-100 text-sm">Personal Project  /  Recipes for mother</p>
         {user && (
           <div className="text-green-500 text-sm">
-            {user && user.email && (user.username ? user.username : user.email.split('@')[0])}
+            {user && user.email}
           </div>
         )}
         {!user && <div className="text-gray-500 text-sm">Guest user</div>}
