@@ -42,11 +42,6 @@ const Form = () => {
     }
   };
 
-  /*useEffect(() => {
-    if (user) {
-      router.push('/');
-    }
-  }, [user]);*/
 
 
   return (
