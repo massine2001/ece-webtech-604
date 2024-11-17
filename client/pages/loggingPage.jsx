@@ -42,11 +42,11 @@ const Form = () => {
     }
   };
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (user) {
       router.push('/');
     }
-  }, [user]);
+  }, [user]);*/
 
 
   return (
