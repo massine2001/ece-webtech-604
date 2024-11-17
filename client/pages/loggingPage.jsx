@@ -6,7 +6,7 @@ import { AppContext } from './appContext.jsx';
 const Form = () => {
   const router = useRouter();
   const { user } = useContext(UserContext);
-  const [mode, setMode] = useState('github');
+  const [mode, setMode] = useState('email');
   const [mode2, setMode2] = useState('connexion');
   const { darkMode } = useContext(AppContext);
 
@@ -23,6 +23,7 @@ const Form = () => {
     try {
       await loginWithEmail(email, password);
       setIsError(false);
+      setErrorMessage('Bienvenue '+email);
     } catch (error) {
       setIsError(true);
       setErrorMessage(error.message);
